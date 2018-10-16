@@ -1,0 +1,29 @@
+
+
+<li><a data-toggle="modal" data-target="#UploadModal" onclick = "$('.bk-root').removeClass('show').addClass('hideBokehClass');">Upload File</a></li>
+
+ <!-- Modal -->
+ <div class="modal fade" data-keyboard="false" data-backdrop="static" id="UploadModal" role="dialog">
+   <div class="modal-dialog">
+
+     <!-- Modal content-->
+     <div class="modal-content">
+       <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" onclick = "$('.bk-root').removeClass('hideBokehClass').addClass('show');">&times;</button>
+         <h4 class="modal-title">Upload Window</h4>
+       </div>
+       <div class="modal-body">
+         <form method=post enctype=multipart/form-data>
+           <!-- Change the "accept" tag in the line below to restrict what types of files your file window will accept. -->
+           <p><input type=file name=file accept=".csv" required><br>
+    		<input class="btn btn-primary" type="Submit" value="Upload">
+	</p>
+	</form>
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-default" data-dismiss="modal" onclick = "$('.bk-root').removeClass('hideBokehClass').addClass('show');">Close</button>
+       </div>
+     </div>
+
+   </div>
+ </div>

@@ -1,0 +1,3 @@
+<div style="min-height:500px; width:100%;">
+    <iframe style="min-height: 500px;  width:inherit;;" src="http://cs358.cis.valpo.edu:5001/sliders"></iframe>
+</div>

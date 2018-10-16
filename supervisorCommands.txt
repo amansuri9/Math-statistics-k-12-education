@@ -1,0 +1,24 @@
+Anything and everything must be run as sudo (schoolstat)
+
+sudo supervisorctl start all -c supervisord.conf
+sudo supervisorctl stop 
+
+[program:mathstats]
+command=python3 __init__.py
+autostart=yes
+autorestart=yes
+startretries=3
+stderror_logfile=error.log
+stdout_logfile=console.log
+user=cabello
+
+stop supervisord:
+sudo unlink /tmp/supervisor.sock
+
+sudo service supervisor status 
+
+
+Instructions in order:
+sudo supervisord -c supervisord.conf
+sudo service supervisor start -c supervisord.conf
+sudo supervisorctl start all -c supervisord.conf

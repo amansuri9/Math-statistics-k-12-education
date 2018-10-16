@@ -1,0 +1,89 @@
+body {
+  background-color: #e9ebee;
+}
+
+header {
+  background-color: #FDF2E9;
+  height: 35px;
+  width: 100%;
+  opacity: .9;
+  margin-bottom: 10px;
+}
+
+header h1.logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.table{
+  background-color:white;
+  max-width: 900px;
+}
+
+.bk-widget .bk-layout-fixed{
+  max-width:900px;
+}
+
+.bk-root .bk-widget-box {
+    overflow: auto !important;
+    padding: 5px 10px;
+}
+
+.modal-backdrop {
+  display: none;
+}
+.modal-content {
+	z-index:1
+}
+h1 {
+  color: black;
+  font-weight: bold;
+}
+
+h2 {
+  color: darkgrey;
+}
+
+h2.center {
+  color: black;
+}
+.bk-root {
+  position: static !important;
+  z-index: 0;
+}
+
+.modal-backdrop {
+  /* Fixes sign-in modal */
+  display: none;
+
+}
+.hideBokehClass {
+  position: static !important;
+  z-index: 0;
+  display: none;
+}
+#home, #menu1, #menu2 {
+  width: inherit;
+  height: inherit;
+}
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block;
+}
